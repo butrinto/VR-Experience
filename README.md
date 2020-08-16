@@ -1,6 +1,6 @@
 # ComputingProjectFinal
 
-To access all the prime coding implemented, please refer to the path:
+To access all of the prime coding/scripts implemented, please refer to the path:
 
 ComputingProjectFinal > Assets > Scripts 
 
