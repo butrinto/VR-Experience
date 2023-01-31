@@ -38,7 +38,52 @@ using UnityEngine.EventSystems;
 ```
 
 <p align="center">
-  <img width="460" height="300" src="image.png">
+  <img width="460" height="300" src=./Images/Picture1.png>
+</p>
+
+### Information Panel
+
+Next developed was an information panel. When the pointer intersected an object; an informative panel would be displayed - detailing the narcotic, its side effects and dangers.
+
+A visual trigger was created, so the user is aware when an object has been clicked on
+
+```
+public void OnPointerEnter(PointerEventData eventData)
+  {
+    // Changes object colour when pointer hovers over object
+    meshRenderer.material.color = enterColor;
+
+    print("Enter");
+  }
+
+  public void OnPointerExit(PointerEventData eventData)
+  {
+      // Changes object colour when pointer stops hovering over object
+      // We will set this to 100% Opacity, as we do not want a colour
+      meshRenderer.material.color = normalColor;
+
+      print("Exit");
+  }
+```
+
+<p align="center">
+  <img width="460" height="300" src=./Images/Picture3.png>
 </p>
 
 
+```
+public void OpenPanel()
+    {
+        // Check if Panel is assigned, null
+        if (Panel != null)
+        {
+            // Toggles the active state
+            bool isActive = Panel.activeSelf;
+
+            Panel.SetActive(!true);
+        }
+    }
+```
+<p align="center">
+  <img width="460" height="300" src=./Images/Picture2.png>
+</p>
