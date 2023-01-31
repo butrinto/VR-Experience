@@ -43,8 +43,6 @@ using UnityEngine.EventSystems;
 
 ### Information Panel
 
-Next developed was an information panel. When the pointer intersected an object; an informative panel would be displayed - detailing the narcotic, its side effects and dangers.
-
 A visual trigger was created, so the user is aware when an object has been clicked on
 
 ```
@@ -71,6 +69,8 @@ public void OnPointerEnter(PointerEventData eventData)
 </p>
 
 
+Next developed was an information panel. When the pointer intersected an object; an informative panel would be displayed - detailing the narcotic, its side effects and dangers.
+
 ```
 public void OpenPanel()
     {
@@ -84,6 +84,32 @@ public void OpenPanel()
         }
     }
 ```
+
+### Post-Processing Effects: Side Effects
+
+In this case - imitation alcohol, a distortion post process was created to mimic the feeling of dizziness.
+
+```
+public sealed class Drunk_PPP : PostProcessEffectSettings
+{
+  // Create two new floats to change the screens distortion
+  [Range(0f, 1f), Tooltip("Drunk Distortion effect intensity")]
+  public FloatParameter amplitude = new FloatParameter { value = 0.5f };
+
+  [Range(0f, 100f), Tooltip("Drunk Distortion effect frequency")]
+  public FloatParameter frequency = new FloatParameter { value = 0.5f };
+}
+```
+
 <p align="center">
-  <img width="460" height="300" src=./Images/Picture2.png>
+  <img width="460" height="300" src=./Images/Picture7.png>
 </p>
+
+## Full Project with studies
+
+For the full report and breakdown of this project, please read the below.
+
+[Virtual_Reality___Experience.pdf](https://github.com/butrinto/VR-Experience/files/10546471/Virtual_Reality___Experience.pdf)
+
+
+
