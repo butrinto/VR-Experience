@@ -37,5 +37,8 @@ using UnityEngine.EventSystems;
     public Camera eventCamera = null;
 ```
 
-![image](https://user-images.githubusercontent.com/47153190/215756514-c29ac77f-e808-4d4b-901e-d0fec485fd24.png)
+<p align="center">
+  <img width="460" height="300" src="image.png">
+</p>
+
 
