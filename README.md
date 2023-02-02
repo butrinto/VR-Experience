@@ -107,7 +107,7 @@ public sealed class Drunk_PPP : PostProcessEffectSettings
 
 ## Full Project with studies
 
-For the full report and breakdown of this project, please read the below.
+For the full report and breakdown of this Virtual Reality project, please read the below.
 
 [Virtual_Reality___Experience.pdf](https://github.com/butrinto/VR-Experience/files/10546471/Virtual_Reality___Experience.pdf)
 
